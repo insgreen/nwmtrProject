@@ -1,0 +1,153 @@
+html {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "kanit", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(92, 207, 246, 0.35),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(107, 176, 255, 0.35),
+      transparent 55%
+    ),
+    linear-gradient(135deg, #011b39, #012756, hsl(200, 91%, 32%), #002944);
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.custom-nav {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
+  color: #fff;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:hover {
+  border-bottom-color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-toggler {
+  width: 28px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-toggler span {
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+}
+
+.custom-toggler span:nth-child(1) {
+  width: 14px;
+}
+
+.custom-toggler span:nth-child(2) {
+  width: 22px;
+}
+
+.custom-toggler span:nth-child(3) {
+  width: 10px;
+}
+
+.nav-logo {
+  height: 45px;
+  width: auto;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.glow-soft {
+  color: #ffffff;
+  text-shadow:
+    0 0 12px rgba(255, 255, 255, 0.463),
+    0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(207, 206, 206, 0.08),
+    rgba(93, 93, 93, 0.02)
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 30px 60px rgba(187, 186, 186, 0.25);
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("image/");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-img {
+  max-width: 420px;
+}
+
+.contact-icon {
+  font-size: 32px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.contact-icon:hover {
+  color: #7fdcff;
+  transform: translateY(-4px);
+}
