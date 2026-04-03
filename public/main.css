@@ -1,0 +1,285 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "kanit", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(26, 81, 123, 0.552),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(49, 98, 153, 0.627),
+      transparent 55%
+    ),
+    linear-gradient(135deg, #4666ab, #274c7f, #40669b, #275493);
+  color: #fff;
+}
+
+.custom-nav {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.custom-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 500;
+}
+
+.custom-nav .nav-link:hover,
+.custom-nav .nav-link.active {
+  color: #fff;
+}
+
+.nav-underline .nav-link.active,
+.nav-underline .nav-link:hover {
+  border-bottom-color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.custom-toggler {
+  width: 28px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: transparent;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.custom-toggler span {
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+}
+
+.custom-toggler span:nth-child(1) {
+  width: 14px;
+}
+
+.custom-toggler span:nth-child(2) {
+  width: 22px;
+}
+
+.custom-toggler span:nth-child(3) {
+  width: 10px;
+}
+
+.nav-logo {
+  height: 45px;
+  width: auto;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.nav-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.glow-soft {
+  color: #ffffff;
+  text-shadow:
+    0 0 12px rgba(255, 255, 255, 0.463),
+    0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.1)
+  );
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(30px);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+.contact-icon {
+  font-size: 32px;
+  color: white;
+  transition: 0.3s;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.contact-icon:hover {
+  color: #7fdcff;
+  transform: translateY(-4px);
+}
+
+.news-img {
+  height: 210px;
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.read-more {
+  font-size: 14px;
+}
+
+.read-more:hover {
+  color: #7dd3fc !important;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.177);
+}
+
+.members-section {
+  background: linear-gradient(
+    180deg,
+    var(--primary-color) 0%,
+    var(--primary-dark) 100%
+  );
+}
+
+.members-section .subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+.member-card {
+  background: transparent;
+  border-radius: 20px;
+  overflow: hidden;
+  flex: 1 1 calc(25% - 30px);
+  max-width: calc(25% - 30px);
+  min-width: 250px;
+  text-align: center;
+  padding-bottom: 20px;
+  transition: var(--transition);
+  position: relative;
+}
+
+@media (max-width: 992px) {
+  .member-card {
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 576px) {
+  .member-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.member-img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #eee;
+  align-items: center;
+}
+
+.member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: 0.4s ease;
+}
+
+.member-card:hover .member-img img {
+  transform: scale(1.08);
+}
+
+.position {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.group-photo {
+  height: 400px;
+  background-image: url("image/gp-04.webp");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .group-photo {
+    background-attachment: scroll;
+  }
+}
+
+.overlay {
+  background: rgba(0, 62, 138, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.round-img {
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  transition: 0.3s ease;
+}
+
+.round-img:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+.card-body {
+  padding-top: 20px !important;
+}
